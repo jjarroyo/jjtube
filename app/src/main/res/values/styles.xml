@@ -1,0 +1,262 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Shrine -->
+    <style name="ThemeOverlay.Shrine" parent="">
+        <item name="colorPrimary">#FEDBD0</item>
+        <item name="colorPrimaryDark">#FFC2AF</item>
+        <item name="colorPrimaryVariant">#FBB8AC</item>
+        <item name="colorSecondary">#FEEAE6</item>
+        <item name="colorSurface">#FFFBFA</item>
+        <item name="android:colorBackground">#FFFFFF</item>
+        <item name="colorError">#C5032B</item>
+        <item name="colorOnPrimary">#442B2D</item>
+        <item name="colorOnSecondary">#442B2D</item>
+        <item name="colorOnSurface">#442B2D</item>
+        <item name="colorOnError">#FFFBFA</item>
+        <item name="colorOnBackground">#442B2D</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Shrine.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Shrine.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Shrine.LargeComponent</item>
+
+        <item name="bottomSheetDialogTheme">@style/Theme.Shrine.BottomSheetDialog</item>
+        <item name="chipStyle">@style/Widget.Shrine.Chip</item>
+        <item name="floatingActionButtonStyle">@style/Widget.Shrine.FloatingActionButton</item>
+        <item name="textInputStyle">@style/Widget.Shrine.TextInputLayout</item>
+    </style>
+
+    <style name="ShapeAppearance.Shrine.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Shrine.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Shrine.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <style name="Widget.Shrine.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="shapeAppearanceOverlay">@null</item>
+    </style>
+
+    <style name="Widget.Shrine.Chip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipCornerRadius">@null</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Shrine.Chip</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Shrine.Chip" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="Widget.Shrine.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+
+    <style name="Theme.Shrine.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.Shrine.BottomSheet.Modal</item>
+    </style>
+
+    <style name="Widget.Shrine.BottomSheet.Modal" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Shrine.BottomSheet</item>
+        <item name="backgroundTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Shrine.BottomSheet" parent="">
+        <item name="cornerSize">0dp</item>
+        <item name="cornerFamilyTopRight">cut</item>
+        <item name="cornerSizeTopRight">24dp</item>
+    </style>
+
+
+    <!-- Fortnightly -->
+    <style name="ThemeOverlay.Fortnightly" parent="">
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorPrimaryVariant">#4E0D3A</item>
+        <item name="colorSecondary">#6B38FB</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="android:colorBackground">#FFFFFF</item>
+        <item name="colorError">#C5032B</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorOnSurface">#442B2D</item>
+        <item name="colorOnError">#FFFBFA</item>
+        <item name="colorOnBackground">#442B2D</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Fortnightly.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Fortnightly.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Fortnightly.LargeComponent</item>
+
+        <item name="bottomSheetDialogTheme">@style/Theme.Fortnightly.BottomSheetDialog</item>
+        <item name="chipStyle">@style/Widget.Fortnightly.Chip</item>
+        <item name="floatingActionButtonStyle">@style/Widget.Fortnightly.FloatingActionButton</item>
+        <item name="textInputStyle">@style/Widget.Fortnightly.TextInputLayout</item>
+    </style>
+
+    <style name="ShapeAppearance.Fortnightly.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">0dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Fortnightly.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">0dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Fortnightly.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">0dp</item>
+    </style>
+
+    <style name="Widget.Fortnightly.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Fortnightly.FloatingActionButton</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Fortnightly.FloatingActionButton" parent="">
+        <item name="cornerSize">@null</item>
+    </style>
+
+    <style name="Widget.Fortnightly.Chip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="shapeAppearanceOverlay">@null</item>
+        <item name="chipCornerRadius">@null</item>
+    </style>
+
+    <style name="Widget.Fortnightly.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+
+    <style name="Theme.Fortnightly.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.Fortnightly.BottomSheet.Modal</item>
+    </style>
+
+    <style name="Widget.Fortnightly.BottomSheet.Modal" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="shapeAppearance">?attr/shapeAppearanceLargeComponent</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Fortnightly.BottomSheet</item>
+        <item name="backgroundTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Fortnightly.BottomSheet" parent="">
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerFamilyTopLeft">cut</item>
+        <item name="cornerFamilyTopRight">cut</item>
+    </style>
+
+    <!-- Crane -->
+
+    <style name="ThemeOverlay.Crane" parent="">
+        <item name="colorPrimary">#5D1049</item>
+        <item name="colorPrimaryDark">#490D3A</item>
+        <item name="colorPrimaryVariant">#4E0D3A</item>
+        <item name="colorSecondary">#E30425</item>
+        <item name="colorSurface">#FFFBFA</item>
+        <item name="android:colorBackground">#FFFFFF</item>
+        <item name="colorError">#EF9A43</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorOnSurface">#442B2D</item>
+        <item name="colorOnError">#FFFBFA</item>
+        <item name="colorOnBackground">#442B2D</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Crane.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Crane.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Crane.LargeComponent</item>
+
+        <item name="bottomSheetDialogTheme">@style/Theme.Crane.BottomSheetDialog</item>
+        <item name="chipStyle">@style/Widget.Crane.Chip</item>
+        <item name="textInputStyle">@style/Widget.Crane.TextInputLayout</item>
+    </style>
+
+    <style name="ShapeAppearance.Crane.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Crane.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Crane.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="Widget.Crane.Chip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="shapeAppearanceOverlay">@null</item>
+        <item name="chipCornerRadius">@null</item>
+    </style>
+
+    <style name="Widget.Crane.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+
+    <style name="Theme.Crane.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.Crane.BottomSheet.Modal</item>
+    </style>
+
+    <style name="Widget.Crane.BottomSheet.Modal" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="shapeAppearance">?attr/shapeAppearanceLargeComponent</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Crane.BottomSheet</item>
+        <item name="backgroundTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Crane.BottomSheet" parent="">
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="android:textColor">@color/media_player_controls</item>
+        <item name="android:textColorAlertDialogListItem">@color/media_player_controls</item>
+        <item name="android:itemBackground">@color/media_player_controls</item>
+        <item name="android:textColorSecondary">@color/media_player_controls</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@color/body</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">#f00</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">#00f</item>
+    </style>
+
+    <style name="MaterialAlertDialog.App.Title.Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/media_player_controls</item>
+    </style>
+
+    <style name="MaterialAlertDialog.App.Body.Text" parent="">
+        <item name="android:textColor">@color/media_player_controls</item>
+    </style>
+
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button</item>
+    </style>
+    <style name="ThemeOverlay.App.Button" parent="">
+        <item name="colorPrimary">@color/media_player_controls</item>
+    </style>
+
+</resources>
