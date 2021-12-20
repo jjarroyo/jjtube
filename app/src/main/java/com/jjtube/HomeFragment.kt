@@ -211,14 +211,14 @@ class HomeFragment : Fragment() {
         return
         */
 
-
+        val youtubeDLDir: File = getDownloadLocation()
         val command =
-            "--extract-audio --audio-format mp3 -o /sdcard/jjtube/%(title)s.%(ext)s $link"
+            "--extract-audio --audio-format mp3 -o $youtubeDLDir/%(title)s.%(ext)s $link"
 
         var request = YoutubeDLRequest(link)
 
         if(type == 1){
-            val youtubeDLDir: File = getDownloadLocation()
+
             request.addOption("-o", youtubeDLDir.absolutePath + "/%(title)s.%(ext)s")
             request.addOption("--force-ipv4")
         }else if(type == 2){
@@ -275,11 +275,21 @@ class HomeFragment : Fragment() {
         return matcher.find()
     }
 
-    private fun getDownloadLocation(): File {
+   /* private fun getDownloadLocation(): File {
         val downloadsDir =
             Environment.getExternalStorageDirectory()
         val youtubeDLDir = File(downloadsDir, "jjtube")
         if (!youtubeDLDir.exists()) youtubeDLDir.mkdir()
+        return youtubeDLDir
+    }*/
+
+    private fun getDownloadLocation(): File {
+        val downloadsDir =
+            Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
+        val youtubeDLDir = File(downloadsDir, "youtubedl-android")
+        if (!youtubeDLDir.exists()) {
+            youtubeDLDir.mkdir()
+        }
         return youtubeDLDir
     }
 
